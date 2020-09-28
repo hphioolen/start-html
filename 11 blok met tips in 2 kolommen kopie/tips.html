@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Starter Files and Tooling Setup!</title>
+</head>
+
+<style>
+  p {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 30px;
+    
+  }
+  
+  .groen {
+    background-color: rgba(46, 209, 46, 0.89);
+  }
+
+  .paars {
+    background-color: rgba(95, 46, 209, 0.89);
+  }
+
+  .rood {
+    background-color: rgba(223, 18, 63, 0.89);
+  }
+
+  .blauw {
+    background-color: rgba(34, 13, 228, 0.89);
+  }
+
+  .geel {
+    background-color: rgba(228, 214, 13, 0.89);
+  }
+
+
+  .titel-blok {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .hart img {
+    border-radius: 50%;
+  }
+
+  .container {
+    margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+
+    p {
+     position: relative;
+      padding-left: 45px;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid red;
+
+    }
+    p::before {
+      content:"-";
+      position: absolute;
+      left: 0;
+      font-weight: 900;
+
+    }
+
+
+    @media only screen and (max-width: 750px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+       
+      <div class="blok1 belangrijk">
+        <div class="titel-blok rood">
+          <h3 class="titel">CAO's </h3>
+          <p class="tip">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <figure class="hart">
+            <img src="https://picsum.photos/100" alt="logo">
+          </figure>
+        </div>
+
+        <div class="titel-blok blauw">
+          <h3 class="titel">Mijn tips voor u</h3>
+          <p class="tip">Lorem,  ipsum animi incidunt. Odio, atque?</p>
+          <figure class="hart">
+            <img src="https://picsum.photos/110" alt="logo">
+          </figure>
+        </div>
+      </div>
+        
+
+      <div class="blok2 tips">
+       
+        <div class="titel-blok groen">
+          <h3 class="titel">Mijn tips voor u</h3>
+          <p class="tip">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <figure class="hart">
+            <img src="https://picsum.photos/150" alt="logo">
+          </figure>
+        </div>
+
+        <div class="titel-blok blauw">
+          <h3 class="titel">Mijn tips voor u</h3>
+          
+          <figure class="hart">
+            <img src="https://picsum.photos/50" alt="logo">
+          </figure>
+        </div>
+
+        <div class="titel-blok geel">
+          <h3 class="titel">Mijn tips voor u</h3>
+          <p class="tip">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <figure class="hart">
+            <img src="https://picsum.photos/150" alt="logo">
+          </figure>
+        </div>
+
+      </div>
+
+    </div>
+
+</body>
+
+</html>

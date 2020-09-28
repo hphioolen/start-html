@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Document</title>
+    <style>
+    img {
+        transition: all 0.2s;
+    }
+    .round {
+        border-radius: 50%;
+        transform: rotate(20deg) scale(2);
+        
+    }
+    </style>
+</head>
+<body>
+    <img src="https://picsum.photos/600" data-name="tetst" data-program="gekkie" class="nice photo" alt="" srcset="">
+
+    <script>
+    let pic = document.querySelector('.nice');
+    pic.classList.add('open');
+    pic.classList.remove('photo');
+    pic.classList.toggle('round');
+        console.log(pic.classList);
+
+    function toggleRound() {
+        pic.classList.toggle('round');
+    }
+
+    pic.addEventListener('click', toggleRound);
+
+    pic.alt = "Cute Pup";
+    pic.title = "title here";
+    console.log(pic.dataset);
+
+    </script>
+</body>
+</html>

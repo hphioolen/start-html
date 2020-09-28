@@ -1,0 +1,83 @@
+.alignfull {
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    max-width: 100vw;
+    position: relative;
+    width: 100%;
+}
+
+  /**
+   * #.# Common SCSS
+   *
+   * Can include things like variables and mixins
+   * that are used across the project.
+  */
+  .wp-block-indrukwekkend-image-text-lr {
+    position: relative;
+    padding-bottom: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 100px 1fr 100px;
+  }
+    .wp-block-indrukwekkend-image-text-lr .icon-blauw-blokje {
+      width: 46px;
+      height: 10px;
+      margin-bottom: 15px;
+      background: #00134a;
+      -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+              clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%); }
+    
+    .wp-block-indrukwekkend-image-text-lr__media {
+      max-width: 1000px;
+      min-width: 350px;
+      height: auto;
+      max-height: 450px;
+      -webkit-clip-path: polygon(0 0, 40% 0, 100% 100%, 0% 100%);
+              clip-path: polygon(0 0, 40% 0, 100% 100%, 0% 100%);
+      margin: 0;
+      grid-column: 1; 
+    grid-row: 1/-1
+    }
+
+    .background {
+        background:
+        aquamarine;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        grid-column: 1/-1;
+    }
+
+      .has-media-on-the-right .wp-block-indrukwekkend-image-text-lr__media {
+        grid-column: 2;
+        -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%); }
+    .wp-block-indrukwekkend-image-text-lr__content-container {
+      grid-column: 2;
+      grid-row: 2;
+      max-width: 80%; }
+      
+      .is-vertically-aligned-top .wp-block-indrukwekkend-image-text-lr__content-container {
+        -ms-flex-item-align: top;
+            align-self: top; }
+      .is-vertically-aligned-center .wp-block-indrukwekkend-image-text-lr__content-container {
+        -ms-flex-item-align: center;
+            align-self: center; }
+      .is-vertically-aligned-bottom .wp-block-indrukwekkend-image-text-lr__content-container {
+        -ms-flex-item-align: end;
+            align-self: end; }
+      .has-media-on-the-right .wp-block-indrukwekkend-image-text-lr__content-container {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: right;
+        display: grid;
+        justify-items: right; }
+        .has-media-on-the-right .wp-block-indrukwekkend-image-text-lr__content-container__content {
+          text-align: right; }
+        .has-media-on-the-right .wp-block-indrukwekkend-image-text-lr__content-container .icon-blauw-blokje {
+          -webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
+                  clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%); 
+        }

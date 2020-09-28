@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Starter Files and Tooling Setup!</title>
+</head>
+
+<style>
+  p {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 30px;
+    
+  }
+  .titel-blok {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hart {
+    margin-bottom: 30%;
+  }
+  .hart img {
+    border-radius: 50%;
+  }
+
+  .container {
+    margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+
+    p {
+     position: relative;
+      padding-left: 45px;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid red;
+
+    }
+    p::before {
+      content:"-";
+      position: absolute;
+      left: 0;
+      font-weight: 900;
+
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+      <div class="titel-blok">
+        <h3 class="titel">Mijn tips voor u</h3>
+        <figure class="hart">
+          <img src="https://picsum.photos/150" alt="logo">
+        </figure>
+      </div>
+
+      <div class="tips">
+        <p class="tip">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, minima quia. Molestias veniam cum quo debitis, odit omnis facilis dolor, laudantium expedita recusandae, ipsam culpa ipsum animi incidunt. Odio, atque?</p>
+        <p class="tip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum alias ipsam fuga laudantium atque consequuntur, laboriosam necessitatibus dolore voluptate cupiditate molestias provident odio maiores illum nobis vero! Architecto, eaque doloremque!</p>
+        <p class="tip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum alias ipsam fuga laudantium atque consequuntur, laboriosam necessitatibus dolore voluptate cupiditate molestias provident odio maiores illum nobis vero! Architecto, eaque doloremque!</p>
+        <p class="tip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum alias ipsam fuga laudantium atque consequuntur, laboriosam necessitatibus dolore voluptate cupiditate molestias provident odio maiores illum nobis vero! Architecto, eaque doloremque!</p>
+      </div>
+    </div>
+
+</body>
+
+</html>
